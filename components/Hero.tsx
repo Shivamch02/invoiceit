@@ -15,10 +15,9 @@ export const Hero = () => {
         enterprises. Effortlessly create, manage, and send professional
         invoices.
       </div>
-
       <div className="flex justify-center mt-10 gap-4">
         <button className="text-white bg-blue-500 rounded-lg px-5 py-1.5 flex items-center justify-center gap-4 group transition-all duration-300">
-          <span className="transition-transform duration-300 group-hover:translate-x-2">
+          <span className="transition-transform duration-300 group-hover:translate-x-2 text-lg font-semibold">
             Get Started
           </span>
           <FaArrowRight className="text-sm opacity-0 transform translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />

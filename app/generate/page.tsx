@@ -1,15 +1,13 @@
-import { Cards } from "@/components/Cards";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
+import { Invoice } from "@/components/Invoice";
 
-export default function Home() {
+const page = () => {
   return (
-    <div className=" text-white bg-gradient-to-tl from-black to-gray-800 min-h-screen">
+    <div className=" text-white bg-gray-800 min-h-screen">
       <div className=" w-full h-full px-32 py-6">
         <Header />
-        <Hero />
-        <Cards />
+        <Invoice />
       </div>
       <hr className="border-gray-700" />
       <div className="px-32">
@@ -17,4 +15,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default page;
