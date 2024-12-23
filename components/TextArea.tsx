@@ -3,7 +3,7 @@ export const TextArea = ({
   label,
 }: {
   placeholder?: string;
-  label: string;
+  label?: string;
 }) => {
   return (
     <div className="flex justify-between py-2">
