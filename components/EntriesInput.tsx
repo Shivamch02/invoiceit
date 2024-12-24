@@ -1,7 +1,8 @@
 import { FaTrash } from "react-icons/fa";
 
+// Define the interface for the props
 interface EntriesInputProps {
-  onClick: () => void; // Define the onClick prop type correctly
+  onClick: () => void; // onClick prop should be a function that returns void
 }
 
 export const EntriesInput = ({ onClick }: EntriesInputProps) => {
