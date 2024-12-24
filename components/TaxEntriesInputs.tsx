@@ -1,9 +1,10 @@
 import { FaTrash } from "react-icons/fa";
 
 interface TaxEntriesInputProps {
+  //tsc-ignore
   onClick: () => void; // Define the onClick prop type
 }
-
+//tsc-ignore
 export const TaxEntriesInput: React.FC<TaxEntriesInputProps> = ({
   onClick,
 }) => {

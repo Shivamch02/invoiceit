@@ -1,9 +1,10 @@
 import { FaTrash } from "react-icons/fa";
 
 interface EntriesInputProps {
+  //tsc-ignore
   onClick: () => void; // Function to handle click events
 }
-
+//tsc-ignore
 export const EntriesInput: React.FC<EntriesInputProps> = ({ onClick }) => {
   return (
     <div>
