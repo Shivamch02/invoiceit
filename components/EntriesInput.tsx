@@ -1,5 +1,10 @@
 import { FaTrash } from "react-icons/fa";
-export const EntriesInput = ({ onClick }: () => void) => {
+
+interface EntriesInputProps {
+  onClick: () => void; // Define the onClick prop type correctly
+}
+
+export const EntriesInput = ({ onClick }: EntriesInputProps) => {
   return (
     <div>
       <div className="flex justify-between p-2 gap-2 hover:bg-gray-700 rounded-xl">
