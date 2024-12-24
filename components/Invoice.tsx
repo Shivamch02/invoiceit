@@ -7,6 +7,8 @@ import { Entries } from "./Entries";
 import { EntriesInput } from "./EntriesInput";
 import { TaxEntries } from "./TaxEntries";
 import { TaxEntriesInput } from "./TaxEntriesInputs";
+import { jsPDF } from "jspdf";
+import html2canvas from "html2canvas";
 
 export const Invoice = () => {
   const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
@@ -31,8 +33,12 @@ export const Invoice = () => {
       setTaxEntriesCount(taxEntriesCount.slice(0, -1));
     }
   };
+
   return (
-    <div className="border border-gray-600 flex rounded-xl p-4 mt-5 flex-col w-full">
+    <div
+      className="border border-gray-600 flex rounded-xl p-4 mt-5 flex-col w-full"
+      id="invoice"
+    >
       <div className="font-bold text-3xl">Invoice</div>
       <Input label="Invoice Id" type="text" placeholder="Invoice Id" />
       <Input label="Invoice Date" type="text" placeholder={date} />
@@ -56,7 +62,7 @@ export const Invoice = () => {
           />
         ))}
       </div>
-      <div className="bg-gray-950 text-center py-2 cursor-pointer">
+      <div className="bg-gray-900 text-center py-2 cursor-pointer hover:bg-gray-800">
         <button className="w-full" onClick={() => handleAdd()}>
           Add another entry
         </button>
@@ -74,7 +80,7 @@ export const Invoice = () => {
           />
         ))}
       </div>
-      <div className="bg-gray-950 text-center py-2 cursor-pointer">
+      <div className="bg-gray-900 hover:bg-gray-800 text-center py-2 cursor-pointer">
         <button className="w-full" onClick={() => taxHandleAdd()}>
           Add another tax
         </button>
@@ -87,7 +93,7 @@ export const Invoice = () => {
         {" "}
         <textarea
           placeholder="Add a custom message"
-          className="bg-gray-800 w-[100%] rounded-xl p-2 border border-gray-600"
+          className="bg-black w-[100%] rounded-xl p-2 border border-gray-600"
         />
         <div className="w-full text-right">
           <button className="px-4 py-1.5 rounded-lg bg-blue-500 font-semibold mt-4">

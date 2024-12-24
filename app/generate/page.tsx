@@ -4,7 +4,7 @@ import { Invoice } from "@/components/Invoice";
 
 const page = () => {
   return (
-    <div className=" text-white bg-gray-800 min-h-screen">
+    <div className=" text-white bg-black min-h-screen">
       <div className=" w-full h-full px-32 py-6">
         <Header />
         <Invoice />

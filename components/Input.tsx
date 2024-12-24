@@ -13,7 +13,7 @@ export const Input = ({
       <input
         type={type}
         placeholder={placeholder}
-        className="p-2 border border-gray-600 rounded-xl bg-gray-800 text-right"
+        className="p-2 border border-gray-600 rounded-xl bg-black text-right"
       />
     </div>
   );

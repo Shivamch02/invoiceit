@@ -14,7 +14,7 @@ export const TextArea = ({
           <textarea
             placeholder={placeholder}
             rows={2}
-            className="bg-gray-800 border border-gray-600 rounded-xl p-2 text-left text-lg"
+            className="bg-black border border-gray-600 rounded-xl p-2 text-left text-lg"
           ></textarea>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -18,13 +19,13 @@ export const Hero = () => {
       <div className="flex justify-center mt-10 gap-4">
         <button className="text-white bg-blue-500 rounded-lg px-5 py-1.5 flex items-center justify-center gap-4 group transition-all duration-300">
           <span className="transition-transform duration-300 group-hover:translate-x-2 text-lg font-semibold">
-            Get Started
+            <Link href={"/generate"}>Get Started</Link>
           </span>
           <FaArrowRight className="text-sm opacity-0 transform translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
         </button>
 
         <button className="text-white hover:text-blue-500 hover:underline">
-          Try for free
+          <Link href={"/generate"}>Try for free</Link>
         </button>
       </div>
     </div>
