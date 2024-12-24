@@ -7,11 +7,9 @@ import { Entries } from "./Entries";
 import { EntriesInput } from "./EntriesInput";
 import { TaxEntries } from "./TaxEntries";
 import { TaxEntriesInput } from "./TaxEntriesInputs";
-import { jsPDF } from "jspdf";
-import html2canvas from "html2canvas";
 
 export const Invoice = () => {
-  const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
+  const [date] = useState(new Date().toISOString().split("T")[0]);
   const [entriesCount, setEntriesCount] = useState<number[]>([]);
   const [taxEntriesCount, setTaxEntriesCount] = useState<number[]>([]);
 
