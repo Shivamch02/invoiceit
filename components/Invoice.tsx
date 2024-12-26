@@ -60,7 +60,7 @@ export const Invoice = () => {
           />
         ))}
       </div>
-      <div className="bg-gray-900 text-center py-2 cursor-pointer hover:bg-gray-800">
+      <div className="bg-gray-900 text-center my-2 py-2 cursor-pointer hover:bg-gray-800">
         <button className="w-full" onClick={() => handleAdd()}>
           Add another entry
         </button>
@@ -80,7 +80,7 @@ export const Invoice = () => {
           />
         ))}
       </div>
-      <div className="bg-gray-900 hover:bg-gray-800 text-center py-2 cursor-pointer">
+      <div className="bg-gray-900 hover:bg-gray-800 text-center my-2 py-2 cursor-pointer">
         <button className="w-full" onClick={() => taxHandleAdd()}>
           Add another tax
         </button>
