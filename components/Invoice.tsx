@@ -46,12 +46,12 @@ export const Invoice = () => {
         type="text"
         placeholder="Add Payments Terms"
       />
-      <div className="flex justify-between w-[40%]">
+      <div className="flex sm:flex-row flex-col sm:justify-between xl:w-[40%] lg:w-[50%] md:w-[60%] w-full">
         <TextArea placeholder="Address" label="Billed To" />
         <TextArea placeholder="Address" label="Pay To" />
       </div>
       <div className="flex flex-col">
-        <div className="font-semibold text-3xl py-2">Entries</div>
+        <div className="font-semibold sm:text-3xl text-2xl py-2">Entries</div>
         <Entries />
         {entriesCount?.map(() => (
           <EntriesInput
@@ -65,11 +65,13 @@ export const Invoice = () => {
           Add another entry
         </button>
       </div>
-      <div className="text-2xl font-semibold text-right py-2 flex items-center justify-end">
+      <div className="sm:text-2xl text-xl font-semibold text-right py-2 flex items-center justify-end">
         Subtotal: <FaDollarSign /> 0.00
       </div>
       <div className="flex flex-col">
-        <div className="font-semibold text-3xl py-2">Tax Details</div>
+        <div className="font-semibold sm:text-3xl text-2xl py-2">
+          Tax Details
+        </div>
         <TaxEntries />
         {taxEntriesCount?.map(() => (
           <TaxEntriesInput
@@ -83,7 +85,7 @@ export const Invoice = () => {
           Add another tax
         </button>
       </div>
-      <div className="text-2xl font-semibold text-right py-2 flex items-center justify-end">
+      <div className="sm:text-2xl text-xl font-semibold text-right py-2 flex items-center justify-end">
         Total: <FaDollarSign /> 0.00
       </div>
       <hr className="border border-gray-700 my-1" />

@@ -8,8 +8,8 @@ export const Input = ({
   placeholder?: string;
 }) => {
   return (
-    <div className="flex items-center justify-between w-[40%] py-2">
-      <div className="text-lg font-medium">{label}: </div>
+    <div className="flex sm:flex-row flex-col sm:items-center justify-between xl:w-[40%] lg:w-[50%] md:w-[60%] w-full py-2">
+      <div className="text-lg font-medium sm:py-0 py-2">{label}: </div>
       <input
         type={type}
         placeholder={placeholder}

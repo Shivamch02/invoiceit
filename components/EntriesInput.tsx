@@ -8,7 +8,7 @@ interface EntriesInputProps {
 export const EntriesInput: React.FC<EntriesInputProps> = ({ onClick }) => {
   return (
     <div>
-      <div className="flex justify-between p-2 gap-2 hover:bg-gray-700 rounded-xl">
+      <div className="flex justify-between py-2 gap-2 hover:bg-gray-700 rounded-xl">
         <input
           type="text"
           placeholder="Enter text"

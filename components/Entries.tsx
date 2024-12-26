@@ -1,11 +1,11 @@
 export const Entries = () => {
   return (
     <div>
-      <div className="flex justify-between p-2 hover:bg-gray-900">
-        <div className="w-[40%]">Description</div>
-        <div className="w-[25%]">Quantity</div>
-        <div className="w-[30%]">Amount</div>
-        <div className="w-[5%]">Actions</div>
+      <div className="flex justify-between hover:bg-gray-900 pr-2">
+        <div className="sm:w-[40%] w-[30%] sm:text-md text-sm">Description</div>
+        <div className="w-[25%] sm:text-md text-sm">Quantity</div>
+        <div className="w-[30%] sm:text-md text-sm">Amount</div>
+        <div className="sm:w-[5%] w-[10%] sm:text-md text-sm">Actions</div>
       </div>
     </div>
   );
