@@ -33,7 +33,7 @@ export const Invoice = () => {
   };
 
   const handleDownloadPdf = async () => {
-    const html2pdf = await require("html2pdf.js");
+    const html2pdf = (await import("html2pdf.js")).default;
     const element = document.querySelector("#invoice");
     html2pdf(element, {
       margin: 10,
