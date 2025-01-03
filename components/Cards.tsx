@@ -7,7 +7,7 @@ export const Cards = () => {
   return (
     <div className="flex flex-col">
       <div className="flex justify-center gap-12 group">
-        <div className="xl:w-1/6 lg:w-1/4 md:w-1/3 w-1/8 sm:block rotate-[-10deg] transition-transform duration-300 group-hover:rotate-[-20deg] opacity-40">
+        <div className="xl:w-1/6 lg:w-1/4 md:w-1/3 w-1/8 sm:block rotate-[-10deg] transition-transform duration-300 group-hover:rotate-[-20deg] dark:opacity-40 opacity-70">
           <Card icon={<FaDollarSign className="text-white text-xl" />} />
         </div>
 
@@ -15,7 +15,7 @@ export const Cards = () => {
           <Card icon={<FaRupeeSign className="text-white text-xl" />} />
         </div>
 
-        <div className="xl:w-1/6 lg:w-1/4 md:w-1/3 w-1/3 hidden sm:block rotate-[10deg] transition-transform duration-300 group-hover:rotate-[20deg] opacity-40">
+        <div className="xl:w-1/6 lg:w-1/4 md:w-1/3 w-1/3 hidden sm:block rotate-[10deg] transition-transform duration-300 group-hover:rotate-[20deg] dark:opacity-40 opacity-70">
           <Card icon={<FaRupeeSign className="text-white text-xl" />} />
         </div>
       </div>

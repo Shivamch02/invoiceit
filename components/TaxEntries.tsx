@@ -1,7 +1,7 @@
 export const TaxEntries = () => {
   return (
     <div>
-      <div className="flex justify-between hover:bg-gray-900">
+      <div className="flex justify-between dark:hover:bg-gray-900">
         <div className="sm:w-[45%] w-[40%] sm:text-md text-sm">Description</div>
         <div className="sm:w-[45%] w-[40%] sm:text-md text-sm">
           Percentage (%)

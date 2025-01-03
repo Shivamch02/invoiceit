@@ -10,12 +10,12 @@ export const Header = () => {
       </div>
       <div className="gap-2 flex items-center">
         <button className="px-4 py-2.5 rounded-lg border border-gray-600 sm:block hidden">
-          <FaDollarSign className="text-white" />
+          <FaDollarSign className="dark:text-white text-black" />
         </button>
         <button className="px-4 py-2.5 rounded-lg border border-gray-600 sm:block hidden">
-          <MdOutlineDarkMode className="text-white" />
+          <MdOutlineDarkMode className="dark:text-white text-black" />
         </button>
-        <button className="sm:px-4 sm:py-1.5 px-2 py-1 rounded-lg bg-blue-500 font-semibold sm:text-md text-sm">
+        <button className="sm:px-4 sm:py-2 px-2 py-1 rounded-lg bg-blue-500 font-semibold sm:text-md text-sm">
           <Link href={"/generate"}> Generate Invoice</Link>
         </button>
       </div>

@@ -4,14 +4,14 @@ import Link from "next/link";
 export const Hero = () => {
   return (
     <div className="flex flex-col items-center sm:py-32 py-10">
-      <div className="bg-gray-950 rounded-full px-3 py-1 text-sm">
+      <div className="dark:bg-gray-950 bg-gray-200 rounded-full px-3 py-1 text-sm">
         Trusted by 💙 10000+ freelancers
       </div>
-      <div className="sm:text-6xl text-4xl text-white font-semibold xl:px-60 lg:px-32 text-center mt-2">
+      <div className="sm:text-6xl text-4xl dark:text-white text-black font-semibold xl:px-60 lg:px-32 text-center mt-2">
         Create Invoices in <span className="text-blue-600">minutes</span> not In
         hours
       </div>
-      <div className="text-gray-300 sm:text-lg text-md text-center mt-4 xl:px-80 lg:px-48">
+      <div className="dark:text-gray-300 text-gray-700 sm:text-lg text-md text-center mt-4 xl:px-80 lg:px-48">
         A Simple Invoice Generator for Freelancers and Businesses and
         enterprises. Effortlessly create, manage, and send professional
         invoices.
@@ -24,7 +24,7 @@ export const Hero = () => {
           <FaArrowRight className="text-sm opacity-0 transform translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
         </button>
 
-        <button className="text-white hover:text-blue-500 hover:underline">
+        <button className="dark:text-white text-black hover:text-blue-500 hover:underline">
           <Link href={"/generate"}>Try for free</Link>
         </button>
       </div>

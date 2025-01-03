@@ -10,16 +10,16 @@ export const TaxEntriesInput: React.FC<TaxEntriesInputProps> = ({
 }) => {
   return (
     <div>
-      <div className="flex justify-between py-2 gap-2 hover:bg-gray-700 rounded-xl">
+      <div className="flex justify-between py-1 gap-2 dark:hover:bg-gray-700 rounded-xl">
         <input
           type="text"
-          className="w-[45%] p-2 border border-gray-600 rounded-xl bg-black text-white placeholder-gray-400"
+          className="w-[45%] px-2 py-1 border border-gray-600 rounded-lg dark:bg-black dark:text-white text-black placeholder-gray-400"
           placeholder="Enter description"
           aria-label="Description"
         />
         <input
           type="number"
-          className="w-[45%] p-2 border border-gray-600 rounded-xl bg-black text-white placeholder-gray-400"
+          className="w-[45%] px-2 py-1 border border-gray-600 rounded-lg dark:bg-black dark:text-white text-black placeholder-gray-400"
           placeholder="%"
           aria-label="Tax percentage"
         />

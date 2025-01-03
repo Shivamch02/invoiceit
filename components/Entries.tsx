@@ -1,7 +1,7 @@
 export const Entries = () => {
   return (
     <div>
-      <div className="flex justify-between hover:bg-gray-900 pr-2">
+      <div className="flex justify-between dark:hover:bg-gray-900 pr-2 text-black dark:text-white">
         <div className="sm:w-[40%] w-[30%] sm:text-md text-sm">Description</div>
         <div className="w-[25%] sm:text-md text-sm">Quantity</div>
         <div className="w-[30%] sm:text-md text-sm">Amount</div>

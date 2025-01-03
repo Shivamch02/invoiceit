@@ -8,21 +8,21 @@ interface EntriesInputProps {
 export const EntriesInput: React.FC<EntriesInputProps> = ({ onClick }) => {
   return (
     <div>
-      <div className="flex justify-between py-2 gap-2 hover:bg-gray-700 rounded-xl">
+      <div className="flex justify-between py-1 gap-2 dark:hover:bg-gray-700 rounded-xl">
         <input
           type="text"
-          placeholder="Enter text"
-          className="w-[40%] p-2 border border-gray-600 rounded-xl bg-black text-white"
+          placeholder="Enter Description"
+          className="w-[40%] px-2 py-1 border border-gray-600 rounded-lg dark:bg-black dark:text-white text-black"
         />
         <input
           type="text"
           placeholder="Enter more text"
-          className="w-[25%] p-2 border border-gray-600 rounded-xl bg-black text-white"
+          className="w-[25%] px-2 py-1 border border-gray-600 rounded-lg dark:bg-black dark:text-white text-black"
         />
         <input
           type="number"
           placeholder="Enter number"
-          className="w-[30%] p-2 border border-gray-600 rounded-xl bg-black text-white"
+          className="w-[30%] px-2 py-1 border border-gray-600 rounded-lg dark:bg-black dark:text-white text-black"
         />
         <div className="w-[5%] flex justify-center cursor-pointer items-center">
           <FaTrash
