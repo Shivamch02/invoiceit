@@ -35,9 +35,21 @@ export const Invoice = () => {
   const handleDownloadPdf = async () => {
     const html2pdf = (await import("html2pdf.js")).default;
     const element = document.querySelector("#invoice");
-    html2pdf(element, {
+
+    const options = {
       margin: 10,
-    });
+      filename: "invoice.pdf",
+      image: { type: "jpeg", quality: 0.5 }, // Lower image quality
+      html2canvas: { scale: 2, useCORS: true }, // Reduce scale and enable CORS
+      jsPDF: {
+        unit: "mm",
+        format: "a4",
+        orientation: "portrait",
+        compress: true,
+      }, // Enable compression
+    };
+
+    html2pdf().set(options).from(element).save();
   };
 
   return (
