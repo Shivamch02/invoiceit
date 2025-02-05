@@ -7,6 +7,7 @@ import { Entries } from "./Entries";
 import { EntriesInput } from "./EntriesInput";
 import { TaxEntries } from "./TaxEntries";
 import { TaxEntriesInput } from "./TaxEntriesInputs";
+import html2pdf from "html2pdf.js";
 
 export const Invoice = () => {
   const [date] = useState(new Date().toISOString().split("T")[0]);
@@ -33,8 +34,12 @@ export const Invoice = () => {
   };
 
   const handleDownloadPdf = async () => {
-    const html2pdf = (await import("html2pdf.js")).default;
+    // const html2pdf = (await import("html2pdf.js")).default;
     const element = document.querySelector("#invoice");
+    if (!element) {
+      alert("Invoice element not found!"); // Or log an error
+      return;
+    }
 
     const options = {
       margin: 10,
